@@ -1,3 +1,4 @@
+import type { LinksFunction } from "@remix-run/node";
 import {
   Links,
   Meta,
@@ -5,6 +6,13 @@ import {
   Scripts,
   ScrollRestoration,
 } from "@remix-run/react";
+
+import styles from "~/styles/main.css?url";
+import NavigationBar from "./components/NavigationBar";
+
+export const links: LinksFunction = () => {
+  return [{ rel: "stylesheet", href: styles }];
+};
 
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
@@ -16,6 +24,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Links />
       </head>
       <body>
+        <NavigationBar />
         {children}
         <ScrollRestoration />
         <Scripts />

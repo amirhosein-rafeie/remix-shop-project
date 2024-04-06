@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+  font-family: Montserrat-Regular;
+}
+
+:root {
+  --primary-color: #3c096c;
+}
+
+body {
+  background-color: beige;
+}
+
+@font-face {
+  font-family: Montserrat-Regular;
+  src: url(/app/assets/fonts/Montserrat-Regular.ttf);
+}
