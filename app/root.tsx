@@ -24,7 +24,9 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Links />
       </head>
       <body>
-        <NavigationBar />
+        <header>
+          <NavigationBar />
+        </header>
         {children}
         <ScrollRestoration />
         <Scripts />
