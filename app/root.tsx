@@ -26,7 +26,6 @@ export function Layout({ children }: { children: React.ReactNode }) {
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-
         <Meta />
         <Links />
       </head>
@@ -47,11 +46,11 @@ export default function App() {
 }
 
 export const ErrorBoundary: ErrorBoundaryComponent = () => {
-  const error = useRouteError();
+  const error = useRouteError() as { message: string };
 
   return (
     <main>
-      <h1>{error.message}</h1>
+      <h1>{error?.message}</h1>
     </main>
   );
 };

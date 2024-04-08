@@ -7,10 +7,11 @@
 
 :root {
   --primary-color: #3c096c;
+  --secondary-color: #aeb8fe;
 }
 
 body {
-  background-color: beige;
+  background-color: var(--secondary-color);
 }
 
 @font-face {

@@ -1,0 +1,25 @@
+.cardContainer {
+  border-radius: 10px;
+  background-color: white;
+  width: 300px;
+  padding: 15px;
+}
+
+.img {
+  height: 250px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.name {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.contentBox {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+}

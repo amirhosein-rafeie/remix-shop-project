@@ -2,6 +2,8 @@
   padding: 10px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff54;
 }
 
 .ul {
@@ -20,11 +22,16 @@
 .navLink {
   font-size: 16px;
   font-weight: bold;
-  color: white;
+  color: rgb(129, 129, 129);
   text-decoration: none;
   transition: all ease 0.25s;
 }
 
 .activeNavLink {
   color: var(--primary-color);
+}
+
+.logo {
+  border-radius: 50%;
+  width: 52px;
 }
